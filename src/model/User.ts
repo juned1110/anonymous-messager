@@ -28,7 +28,7 @@ export interface User extends Document {
   messages: Message[];
 }
 
-const User: Schema<User> = new Schema({
+const UserSchema: Schema<User> = new Schema({
   username: {
     type: String,
     required: [true, "Username is required"],
